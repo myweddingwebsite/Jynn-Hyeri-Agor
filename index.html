@@ -50,21 +50,8 @@ ul{list-style:none;}
 
 .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
 
-/* ---------- photo section backgrounds ---------- */
-.section-photo{ position:relative; overflow:hidden; isolation:isolate; }
-.section-photo::before{
-  content:""; position:absolute; inset:0;
-  background-image:var(--bg-image);
-  background-size:cover; background-position:center;
-  z-index:-2;
-}
-.section-photo::after{
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(251,246,236,0.87) 0%, rgba(251,246,236,0.82) 45%, rgba(251,246,236,0.9) 100%);
-  z-index:-1;
-}
-.section-photo.tint-sage::after{ background:linear-gradient(180deg, rgba(228,235,224,0.86) 0%, rgba(251,246,236,0.8) 50%, rgba(251,246,236,0.9) 100%); }
-.section-photo.tint-deep::after{ background:linear-gradient(180deg, rgba(60,70,54,0.55) 0%, rgba(60,70,54,0.72) 100%); }
+/* ---------- photo section backgrounds (same technique as hero) ---------- */
+.section-photo{ position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; }
 
 /* ---------- reveal on scroll ---------- */
 .reveal{opacity:0; transform:translateY(28px); transition:opacity 0.9s ease, transform 0.9s ease;}
@@ -438,7 +425,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </section>
 
 <!-- WELCOME -->
-<div class="wrap welcome reveal section-photo tint-sage" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/2.jpg')">
+<div class="wrap welcome reveal section-photo" style="background-image: linear-gradient(180deg, rgba(228,235,224,0.86) 0%, rgba(251,246,236,0.8) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/2.jpg');">
   <p>"With hearts full of gratitude, we invite you to witness Hyeri's baptism and celebrate the joy of her very first year — a day of faith, family, and fairy-tale wonder."</p>
   <div class="sign">The Agor Family</div>
 </div>
@@ -450,7 +437,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </div>
 
 <!-- BAPTISM & BIRTHDAY -->
-<section class="wrap section-photo" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/3.jpg')">
+<section class="wrap section-photo" style="background-image: linear-gradient(180deg, rgba(251,246,236,0.87) 0%, rgba(251,246,236,0.82) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/3.jpg');">
   <div class="eyebrow reveal">The Celebration</div>
   <h2 class="section-title reveal">Two Blessings, One Day</h2>
   <p class="section-sub reveal">Join us as we give thanks for Hyeri's baptism, then carry the joy into an evening celebrating her first year.</p>
@@ -489,7 +476,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </section>
 
 <!-- ATTIRE -->
-<section class="wrap section-photo tint-sage" id="attire" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/4.jpg')">
+<section class="wrap section-photo" id="attire" style="background-image: linear-gradient(180deg, rgba(228,235,224,0.86) 0%, rgba(251,246,236,0.8) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/4.jpg');">
   <div class="eyebrow reveal">What to Wear</div>
   <h2 class="section-title reveal">Guest &amp; Godparent Attire</h2>
   <p class="section-sub reveal">A soft, elegant palette to match the day's fairy-tale spirit.</p>
@@ -521,7 +508,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </section>
 
 <!-- GIFTS -->
-<section class="wrap section-photo" id="gifts" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/5.jpg')">
+<section class="wrap section-photo" id="gifts" style="background-image: linear-gradient(180deg, rgba(251,246,236,0.87) 0%, rgba(251,246,236,0.82) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/5.jpg');">
   <div class="eyebrow reveal">With Love &amp; Gratitude</div>
   <h2 class="section-title reveal">Gift Ideas</h2>
   <p class="section-sub reveal">Your presence is truly the greatest gift. Should you wish to spoil baby Hyeri further, here are a few thoughtful ideas.</p>
@@ -538,7 +525,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </section>
 
 <!-- SAFETY -->
-<section class="wrap section-photo tint-sage" id="safety" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/6.jpg')">
+<section class="wrap section-photo" id="safety" style="background-image: linear-gradient(180deg, rgba(228,235,224,0.86) 0%, rgba(251,246,236,0.8) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/6.jpg');">
   <div class="eyebrow reveal">A Gentle Reminder</div>
   <h2 class="section-title reveal">Health &amp; Safety Reminders</h2>
   <p class="section-sub reveal">A few loving reminders to help keep baby Hyeri safe and healthy.</p>
@@ -554,7 +541,7 @@ footer .fcredit{margin-top:22px; font-family:var(--caps); font-size:9.5px; lette
 </section>
 
 <!-- RSVP -->
-<section class="wrap section-photo" id="rsvp" style="--bg-image:url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/7.jpg')">
+<section class="wrap section-photo" id="rsvp" style="background-image: linear-gradient(180deg, rgba(251,246,236,0.87) 0%, rgba(251,246,236,0.82) 45%, rgba(251,246,236,0.9) 100%), url('https://ik.imagekit.io/jcsquo5nq/Jynn%20Hyeri%20Agor/7.jpg');">
   <div class="rsvp reveal">
     <div class="rsvp-inner">
       <div class="eyebrow" style="color:rgba(255,255,255,0.85);">Kindly Respond</div>
